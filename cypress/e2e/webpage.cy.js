@@ -72,7 +72,7 @@ describe('Automation Tests for saucedemo', () => {
         cy.get('.bm-item-list').children().eq(3).should('have.text', 'Reset App State')
     });
 
-    it.only('Test 6: Filter', () => {
+    it('Test 6: Filter', () => {
         accLogin(userName1, password)
         cy.get('.product_sort_container').should('exist')
             .and('be.visible')
